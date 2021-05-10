@@ -3,7 +3,7 @@
     background-image: url('../img/Logo_and_theme/london_theme.jpg');
     background-size: cover;
     background-position: bottom center;
-    position: relative;
+    background-attachment: fixed;
 }
 
 .header {
