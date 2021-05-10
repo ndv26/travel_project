@@ -1,0 +1,182 @@
+.sidebar__responsive {
+    width: 300px;
+    height: 100vh;
+    padding: 40px 0;
+    background-color: rgb(85, 85, 85);
+    position: fixed;
+    top: 0; 
+    right: 0;
+    overflow: auto;
+    z-index: 5;
+    transform: translateX(100%);
+    transition: transform ease 0.7s;
+}
+
+.sidebar-checkbox:checked ~ .sidebar__responsive {
+    transform: translateX(0);
+}
+
+.sidebar__subnav-list,
+.sidebar__subnav-child-list {
+    padding-left: 20px;
+}
+
+.sidebar__nav-item:first-child {
+    margin-bottom: 30px;
+}
+
+.sidebar__nav-list,
+.sidebar__subnav-list,
+.sidebar__subnav-child-list {
+    list-style: none;
+    margin: 0;
+}
+
+.sidebar__nav-link,
+.sidebar__subnav-link,
+.sidebar__subnav-child-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar__subnav-list {
+    margin-bottom: 30px;
+}
+
+.sidebar__nav-link {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.sidebar__subnav-link,
+.sidebar__subnav-child-link {
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+    font-weight: normal;
+}
+
+/* Mobile and Tablet */ 
+@media (max-width: 1023px) {
+    .navbar__list {
+        display: none;
+    }
+
+    /* sidebar */
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar__responsive {
+        display: block;
+    }
+
+    /* search */
+    .search {
+        padding: 200px 0;
+    }
+    
+    /* Holiday */
+    .holiday {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .holiday__heading {
+        text-align: center;
+    }
+    /* special */
+
+    .special-info-wrapper {
+        padding: 0 15px;
+    }
+
+    .special-slider-wrapper {
+        padding: 30px 15px 0 15px;
+    }
+
+    .special__time {
+        position: unset;
+        width: 100%;
+    }
+
+    .special__time-box {
+        width: 25%;
+    }
+
+    /* discover */
+
+    .discover {
+        display: block;
+    }
+
+    /* footer */
+
+    .contact {
+        display: block;
+    }
+
+    .contact__heading {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact__msg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact__your-msg {
+        width: 70%;
+    }
+
+    .footer {
+        height: 100%;
+    }
+}
+
+/* Tablet only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile Only */
+
+@media (max-width: 739px) {
+
+    /* header */
+    .header-navbar {
+        height: unset;
+        padding: 10px 10px;
+    }
+
+    /* search */
+
+    .search__wrapper {
+        display: block;
+    }
+
+    .search__heading {
+        text-align: center;
+        line-height: 6rem;
+    }
+
+    .search__topic {
+        display: block;
+    }
+
+    .search__topic-item-wrapper {
+        width: 100%;   
+    }
+
+    .search__input-thing {
+        width: 85%;
+    }
+    
+    .search__input-item {
+        right: 8%;
+    }
+}
