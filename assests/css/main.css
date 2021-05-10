@@ -1,6 +1,6 @@
 .header-and-search {
     width: 100%;
-    background-image: url('/assests/img/Logo_and_theme/london_theme.jpg');
+    background-image: url('../img/Logo_and_theme/london_theme.jpg');
     background-size: cover;
     background-position: bottom center;
     position: relative;
@@ -589,7 +589,7 @@
 .holiday {
     width: 100%;
     height: 235px;
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538);
+    background-image: url('../img/destinations/sanfrancisco_2.jpg');
     background-position: center;
     background-size: cover;
     margin-top: 60px;
@@ -751,7 +751,7 @@
 .special__slider-img {
     width: 100%;
     height: 410px;
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-3.jpg);
+    background-image: url('../img/destinations/bestbeach.jpg');
     background-position: center center;
     background-size: cover;
     display: flex;
@@ -872,11 +872,11 @@
 }
 
 .discover__background-1 {
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584);
+    background-image: url('../img/destinations/discover_1.jpg');
 }
 
 .discover__background-2 {
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585);
+    background-image: url('../img/destinations/discover_2.jpg');
 }
 
 .discover__background {
@@ -1110,7 +1110,7 @@
     margin-top: 75px;
     width: 100%;
     height: 100%;
-    background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-7.jpg?id=1602);
+    background-image: url('../img/destinations/footer_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
