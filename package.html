@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assests/css/grid.css">
     <link rel="stylesheet" href="./assests/css/base.css">
-    <link rel="stylesheet" href="./assests/css/main.css">
-    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="stylesheet" href="./assests/css/package_main.css">
+    <link rel="stylesheet" href="./assests/css/package_responsive.css">
     <link rel="stylesheet" href="./assests/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="./assests/fonts/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Love Travel - Packages</title>
 </head>
-<body>  
-    <div class="main">
-        <!-- Header & Search -->
+<body>
+    <div class="container">
         <div class="header-and-search">
             <div class="header">
                 <nav class="header-navbar">
@@ -29,7 +29,7 @@
                                 <a href="" class="navbar__link">HOME</a>
                             </li>
                             <li class="navbar__item navbar__item--hover">
-                                <a href="package.html" class="navbar__link">PACKAGES</a>
+                                <a href="" class="navbar__link">PACKAGES</a>
                                 <ul class="navbar__list-subnav">
                                     <li class="navbar__list-subnav-item navbar__list-subnav-item--hot">
                                         <a href="" class="navbar__list-subnav-link">
@@ -270,7 +270,6 @@
                     </label>
                 </nav>
             </div>
-
             <!-- Sidebar -->
             <input class= "sidebar-checkbox" hidden type="checkbox" name="" id="sidebar-check">
             <div class="sidebar">
@@ -677,378 +676,201 @@
                 </div>
             </div>
 
-            <!-- search -->
-            <div class="search">
-                <div class="search__wrapper">
-                    <div class="search__layout">
-                        <h1 class="search__heading">Search your next 
-                            <u>HoliDay</u>
-                        </h1>
-                        <h3 class="search__des">CHECK OUR BEST PROMOTIONS</h3>
-                        <div class="search__input">
-                            <input type="text" class="search__input-thing" placeholder="Choose your Destination ...">
-                            <div class="search__input-item">
-                                <i class="search__input-icon ti-search"></i>
+            <!-- Search -->
+            <div class="search-section">
+                <div class="search-section-wrapper">
+                    <div class="search__heading">
+                        <h3 class="search-first-heading">OUR PACKAGES</h3>
+                        <h2 class="search-second-heading">
+                            Search your 
+                            <u>Holiday</u>
+                        </h2>
+                    </div>
+                    <div class="search__menu">
+                        <div class="grid wide search__menu-wrapper">
+                            <div class="row">
+                                <div class="col l-4 m-12 c-12">
+                                    <div class="search__menu-select">
+                                        <h3 class="search__menu-select-heading">Select Your Destination :</h3>
+                                        <div class="search__menu-destination-selection">
+                                            <select name="" id="" class="search__menu-select-destination">
+                                                <option value="0">All destinations</option>
+                                                <option value="">Europe</option>
+                                                <option value="">&nbsp;&nbsp;- Italy</option>
+                                                <option value="">&nbsp;&nbsp;- Netherlands</option>
+                                                <option value="">Asia</option>
+                                                <option value="">&nbsp;&nbsp;- Thailandia</option>
+                                                <option value="">United States</option>
+                                                <option value="">Oceania</option>
+                                            </select>
+                                            <i class="search__location-icon ti-location-pin"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-12 c-12">
+                                    <div class="search__menu-select">
+                                        <h3 class="search__menu-select-heading">Select Your Date :</h3>
+                                        <div class="search__menu-date-selection">
+                                            <input type="text" placeholder="mm-dd-yyyy" class="search__menu-select-date">
+                                            <i class="search__date-icon ti-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-12 c-12">
+                                    <div class="search__menu-select">
+                                        <div class="search__menu-select-price-heading">
+                                            <h3 class="search__menu-select-heading">Max Price: </h3>
+                                            <span class="selected-price">0 $</span>
+                                        </div>                      
+                                        <div class="search__menu-select-price">
+                                            <div class="search__menu-price-slider"></div>
+                                            <span class="search__menu-price-pos"></span>
+                                        </div>
+                                        <div class="search__menu-check">
+                                            <p class="search__menu-promotion-check">
+                                                <input type="checkbox" name="" id="">
+                                                See only promotions
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="search__topic">
-                            <div class="search__topic-item">
-                                <a href="" class="search__topic-item-wrapper">
-                                    <img class="search__topic-img" src="./assests/img/Search_img/search_img_1.png" alt="">
-                                    <p class="search__topic-des">RELAX</p>
-                                </a>
+                        <div class="search__filter">
+                            <div class="search__filter-wrapper">
+                                <span class="search__filer-pick">
+                                    <img src="./assests/img/package_img/icon-filter-white.png" alt="">
+                                     MORE FILTERS
+                                </span>
+                                <div class="search__filter-board">
+                                    <div class="search__filter-row">
+                                        <div class="search__filter-col">
+                                            <h3 class="search__filter-heading">
+                                                Typologies:
+                                            </h3>
+                                            <ul class="search__filter-list">
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="search__filter-col">
+                                            <h3 class="search__filter-heading">
+                                                Typologies:
+                                            </h3>
+                                            <ul class="search__filter-list">
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="search__filter-col">
+                                            <h3 class="search__filter-heading">
+                                                Typologies:
+                                            </h3>
+                                            <ul class="search__filter-list">
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;Relax
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="search__filter-col">
+                                            <h3 class="search__filter-heading">
+                                                Min Age:
+                                            </h3>
+                                            <ul class="search__filter-list">
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;10 Years
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;18 Years
+                                                </li>
+                                                <li class="search__filter-item">
+                                                    <input type="checkbox" name="" id="">
+                                                    &nbsp;&nbsp;3 Years
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="search__topic-item">
-                                <a href="" class="search__topic-item-wrapper">
-                                    <img class="search__topic-img" src="./assests/img/Search_img/search_img_2.png" alt="">
-                                    <p class="search__topic-des">CULTURAL</p>
-                                </a>                      
-                            </div>
-                            <div class="search__topic-item">
-                                <a href="" class="search__topic-item-wrapper">
-                                    <img class="search__topic-img" src="./assests/img/Search_img/search_img_3.png" alt="">
-                                    <p class="search__topic-des">SPORT</p>
-                                </a>                
-                            </div>
-                            <div class="search__topic-item">
-                                <a href="" class="search__topic-item-wrapper">
-                                    <img class="search__topic-img" src="./assests/img/Search_img/search_img_4.png" alt="">
-                                    <p class="search__topic-des">HISTORY</p>
-                                </a>                
+                        </div>
+                    </div>
+                    <div class="search__menu-bar">
+                        <div class="search__menu-list-wrapper">
+                            <ul class="search__menu-list">
+                                <li class="search__menu-item">
+                                    PRICE
+                                    <i class="search__menu-icon ti-angle-down"></i>
+                                    <ul class="search__menu-list-child">
+                                        <li class="search__menu-item-child">LOWEST PRICE</li>
+                                        <li class="search__menu-item-child">HIGHEST PRICE</li>
+                                    </ul>
+                                </li>
+                                <li class="search__menu-item">
+                                    NAME
+                                    <i class="search__menu-icon ti-angle-down"></i>
+                                    <ul class="search__menu-list-child">
+                                        <li class="search__menu-item-child">DESC</li>
+                                        <li class="search__menu-item-child">ASC</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search__layout-package">
+                            <div class="search__layout-change">
+                                <img src="./assests/img/package_img/changelayout2.png" alt="" class="search__layout-change-img">
+                                <img src="./assests/img/package_img/changelayout.png" alt="" class="search__layout-change-img">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Content section -->
+        <!--========== CONTENT ======= -->
         <div class="content">
-            <!-- Proposal Section -->
-            <div class="proposal__section">
-                <div class="proposal-and-promotion__heading">
-                    <h5 class="first-heading">OUR PROPOSALS</h5>
-                    <h3 class="second-heading">
-                        OUR
-                        <u>DESTINATIONS</u>
-                    </h3>
-                </div>
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-4 c-12 proposal__destination-wrapper">
-                            <div class="proposal__destination">
-                                <img class="proposal__destination-img" src="./assests/img/destinations/europe.jpg" alt="">
-                                <div class="proposal__destination-info">
-                                    <div class="proposal__destination-sm-img">
-                                        <img src="./assests/img/Search_img/europe.png" alt="">
-                                    </div>
-                                    <div class="proposal__destination-heading">
-                                        <h3 class="proposal__destination-first-heading">Europe</h3>
-                                        <h4 class="proposal__destination-second-heading">3 PACKAGES</h4>
-                                    </div>
-                                </div>
-                                <div class="proposal__destination-sub-info">
-                                    <h3 class="proposal__destination-sub-info-heading">Packages</h3>
-                                    <p class="proposal__destination-sub-info-place">Berlin</p>
-                                    <p class="proposal__destination-sub-info-place">Amsterdam</p>
-                                    <p class="proposal__destination-sub-info-place">Tuscany</p>
-                                    <div class="navbar__place-hightlight-btn">
-                                        <div class="button button--white button--width">
-                                            <a href="" class="btn">
-                                                VIEW DESTINATION
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 c-12 proposal__destination-wrapper">
-                            <div class="proposal__destination">
-                                <img class="proposal__destination-img" src="./assests/img/destinations/thailandia.jpg" alt="">
-                                <div class="proposal__destination-info">
-                                    <div class="proposal__destination-sm-img">
-                                        <img src="./assests/img/Search_img/thailandia.png" alt="">
-                                    </div>
-                                    <div class="proposal__destination-heading">
-                                        <h3 class="proposal__destination-first-heading">Thailandia</h3>
-                                        <h4 class="proposal__destination-second-heading">1 PACKAGE</h4>
-                                    </div>
-                                    <div class="proposal__destination-sub-info">
-                                        <h3 class="proposal__destination-sub-info-heading">Packages</h3>
-                                        <p class="proposal__destination-sub-info-place">Phuket</p>
-                                        <div class="navbar__place-hightlight-btn">
-                                            <div class="button button--white button--width">
-                                                <a href="" class="btn">
-                                                    VIEW DESTINATION
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 c-12 proposal__destination-wrapper">
-                            <div class="proposal__destination">
-                                <img class="proposal__destination-img" src="./assests/img/destinations/asia.jpg" alt="">
-                                <div class="proposal__destination-info">
-                                    <div class="proposal__destination-sm-img">
-                                        <img src="./assests/img/Search_img/asia.png" alt="">
-                                    </div>
-                                    <div class="proposal__destination-heading">
-                                        <h3 class="proposal__destination-first-heading">Asia</h3>
-                                        <h4 class="proposal__destination-second-heading">2 PACKAGES</h4>
-                                    </div>
-                                    <div class="proposal__destination-sub-info">
-                                        <h3 class="proposal__destination-sub-info-heading">Packages</h3>
-                                        <p class="proposal__destination-sub-info-place">HongKong</p>
-                                        <p class="proposal__destination-sub-info-place">Phuket</p>
-                                        <div class="navbar__place-hightlight-btn">
-                                            <div class="button button--white button--width">
-                                                <a href="" class="btn">
-                                                    VIEW DESTINATION
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 c-12 proposal__destination-wrapper">
-                            <div class="proposal__destination">
-                                <img class="proposal__destination-img" src="./assests/img/destinations/italy.jpg" alt="">
-                                <div class="proposal__destination-info">
-                                    <div class="proposal__destination-sm-img">
-                                        <img src="./assests/img/Search_img/italy.png" alt="">
-                                    </div>
-                                    <div class="proposal__destination-heading">
-                                        <h3 class="proposal__destination-first-heading">Italy</h3>
-                                        <h4 class="proposal__destination-second-heading">1 PACKAGE</h4>
-                                    </div>
-                                    <div class="proposal__destination-sub-info">
-                                        <h3 class="proposal__destination-sub-info-heading">Packages</h3>
-                                        <p class="proposal__destination-sub-info-place">Tuscany</p>
-                                        <div class="navbar__place-hightlight-btn">
-                                            <div class="button button--white button--width">
-                                                <a href="" class="btn">
-                                                    VIEW DESTINATION
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 c-12 proposal__destination-wrapper">
-                            <div class="proposal__destination">
-                                <img class="proposal__destination-img" src="./assests/img/destinations/netherland.jpg" alt="">
-                                <div class="proposal__destination-info">
-                                    <div class="proposal__destination-sm-img">
-                                        <img src="./assests/img/Search_img/netherland.png" alt="">
-                                    </div>
-                                    <div class="proposal__destination-heading">
-                                        <h3 class="proposal__destination-first-heading">Netherlands</h3>
-                                        <h4 class="proposal__destination-second-heading">1 PACKAGE</h4>
-                                    </div>
-                                    <div class="proposal__destination-sub-info">
-                                        <h3 class="proposal__destination-sub-info-heading">Packages</h3>
-                                        <p class="proposal__destination-sub-info-place">Amsterdam</p>             
-                                        <div class="navbar__place-hightlight-btn">
-                                            <div class="button button--white button--width">
-                                                <a href="" class="btn">
-                                                    VIEW DESTINATION
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 c-12 proposal__destination-wrapper">
-                            <div class="proposal__destination">
-                                <img class="proposal__destination-img" src="./assests/img/destinations/us.jpg" alt="">
-                                <div class="proposal__destination-info">
-                                    <div class="proposal__destination-sm-img">
-                                        <img src="./assests/img/Search_img/unitedstate.png" alt="">
-                                    </div>
-                                    <div class="proposal__destination-heading">
-                                        <h3 class="proposal__destination-first-heading">United States</h3>
-                                        <h4 class="proposal__destination-second-heading">1 PACKAGE</h4>
-                                    </div>
-                                    <div class="proposal__destination-sub-info">
-                                        <h3 class="proposal__destination-sub-info-heading">Packages</h3>
-                                        <p class="proposal__destination-sub-info-place">San Francisco</p>
-                                        <div class="navbar__place-hightlight-btn">
-                                            <div class="button button--white button--width">
-                                                <a href="" class="btn">
-                                                    VIEW DESTINATION
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- holiday -->
-            <div class="holiday">
-                <div class="holiday__heading">
-                    <h2 class="holiday__first-heading">
-                        Your
-                    </h2>
-                    <h2 class="holiday__second-heading">
-                        Next
-                        <u>Holiday</u>
-                    </h2>
-                </div>
-                <div class="holiday__button">
-                    <a href="" class="btn">VIEW ALL PACKAGES</a>
-                </div>
-            </div>
-
-            <!-- special place -->
-            <div class="special">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="special-info-wrapper col l-4 m-12 c-12">
-                            <div class="special__info">
-                                <h4 class="special__location">
-                                    NORTH AMERICA
-                                </h4>
-                                <h2 class="special__place">
-                                    The Best 
-                                    <u>Beaches</u>
-                                </h2>
-                                <p class="special__des">
-                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
-                                </p>
-                                <p class="special__des">
-                                    Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
-                                </p>
-                                <h1 class="special__price">
-                                    <p class="special__old-price">800</p>
-                                    500$
-                                    <span class="special__price-person">/ FOR PERSON</span>
-                                </h1>
-                                <div class="special__button">
-                                    <a href="" class="btn">BOOK NOW</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="special-slider-wrapper col l-8 m-12 c-12">
-                            <div class="special__slider-img">
-                                <div class="special__slider-select special__slider-selected"></div>
-                                <div class="special__slider-select"></div>
-                                <div class="special__slider-select"></div>
-                            </div>
-                            <div class="special__time">
-                                <div class="special__time-box special__time-box--seperate">
-                                    <h1 class="special__time-num">000</h1>
-                                    <h6 class="special__time-des">DAYS</h6>
-                                </div>
-                                <div class="special__time-box special__time-box--seperate">
-                                    <h1 class="special__time-num">00</h1>
-                                    <h6 class="special__time-des">HOURS</h6>
-                                </div>
-                                <div class="special__time-box special__time-box--seperate">
-                                    <h1 class="special__time-num">00</h1>
-                                    <h6 class="special__time-des">MINUTES</h6>
-                                </div>
-                                <div class="special__time-box">
-                                    <h1 class="special__time-num">00</h1>
-                                    <h6 class="special__time-des">SECONDS</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="special__more grid wide">
+            <div class="package">
+                 <div class="grid wide">
                     <div class="row">
                         <div class="col l-4 m-12 c-12">
-                            <div class="special__more-wrap-info">
-                                <div class="special__more-img">
-                                    <img src="./assests/img/Search_img/worldtour.png" alt="">
-                                </div>
-                                <div class="special__more-info">
-                                    <h3 class="special__more-heading">World Tour</h3>
-                                    <p class="special__more-des">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <a class="view-more" href="">View more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="special__more-wrap-info">
-                                <div class="special__more-img">
-                                    <img src="./assests/img/Search_img/cruises.png" alt="">
-                                </div>
-                                <div class="special__more-info">
-                                    <h3 class="special__more-heading">Cruises</h3>
-                                    <p class="special__more-des">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <a class="view-more" href="">View more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="special__more-wrap-info">
-                                <div class="special__more-img">
-                                    <img src="./assests/img/Search_img/worldtour.png" alt="">
-                                </div>
-                                <div class="special__more-info">
-                                    <h3 class="special__more-heading">Best Tour</h3>
-                                    <p class="special__more-des">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
-                                    <a class="view-more" href="">View more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- discover -->
-            <div class="discover">
-                <div class="discover__background discover__background-1">
-                    <div class="discover__info">
-                        <h3 class="discover__topic">
-                            01. LAST MINUTE
-                        </h3>
-                        <h2 class="discover__heading">
-                            Discover Cities
-                        </h2>
-                        <div class="discover__button discover__button--orange">
-                            <a href="" class="btn">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="discover__background discover__background-2">
-                    <div class="discover__info">
-                        <h3 class="discover__topic">
-                            01. LAST MINUTE
-                        </h3>
-                        <h2 class="discover__heading">
-                            Discover Cities
-                        </h2>
-                        <div class="discover__button discover__button--green">
-                            <a href="" class="btn">Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Promotion -->
-            <div class="promotion__section">
-                <div class="proposal-and-promotion__heading">
-                    <h5 class="first-heading">PROMOTIONS</h5>
-                    <h3 class="second-heading">
-                        OUR
-                        <u>PACKAGES</u>
-                    </h3>
-                </div>
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-4 m-12 c-12">
-                            <div class="promotion__destination">
+                            <div class="promotion__destination package__item-mg30px">
                                 <div class="destination__image-container">
                                     <img src="./assests/img/destinations/berlin2.jpg" alt="" class="destination__image">
                                     <div class="destination__sub-image-container destination__background--yellow">
@@ -1096,7 +918,7 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="promotion__destination">
+                            <div class="promotion__destination package__item-mg30px">
                                 <div class="destination__image-container">
                                     <img src="./assests/img/destinations/hongkong_2.jpg" alt="" class="destination__image">
                                     <div class="destination__sub-image-container destination__background--red">
@@ -1144,7 +966,151 @@
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
-                            <div class="promotion__destination">
+                            <div class="promotion__destination package__item-mg30px">
+                                <div class="destination__image-container">
+                                    <img src="./assests/img/destinations/sanf_3.jpg" alt="" class="destination__image">
+                                    <div class="destination__sub-image-container destination__background--purple">
+                                        <img src="./assests/img/Search_img/unitedstate.png" alt="" class="destination__sub-img">
+                                    </div>
+                                </div>
+                                <div class="destination__info-wrapper">
+                                    <div class="destination__name">
+                                        <h3 class="destination__place">
+                                            San Francisco
+                                        </h3>
+                                        <h3 class="destination__location">
+                                            <i class="destination__location-icon ti-location-pin"></i>
+                                            United States
+                                        </h3>
+                                    </div>
+                                    <div class="destination__purpose-and-price">
+                                        <div class="destination__purpose">
+                                            <h3 class="destination__first-purpose">SPORT</h3>
+                                            <h3 class="destination__second-purpose">
+                                                RELAX
+                                                <span class="destination__purpose-hidden destination--purple">
+                                                    +1
+                                                    <div class="destination__third-purpose">
+                                                        <a href="">Cultural</a>
+                                                    </div>
+                                                </span>
+                                            </h3>
+                                        </div>
+                                        <div class="destination__price">
+                                            <span class="destination__current-price">
+                                                700$
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="destination__des">
+                                        <p class="destination__paragraph">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                        </p>
+                                    </div>
+                                    <div class="destination__button destination--purple">
+                                        <a href="" class="btn">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="promotion__destination package__item-mg30px">
+                                <div class="destination__image-container">
+                                    <img src="./assests/img/destinations/berlin2.jpg" alt="" class="destination__image">
+                                    <div class="destination__sub-image-container destination__background--yellow">
+                                        <img src="./assests/img/Search_img/europe.png" alt="" class="destination__sub-img">
+                                    </div>
+                                </div>
+                                <div class="destination__info-wrapper">
+                                    <div class="destination__name">
+                                        <h3 class="destination__place">
+                                            Berlin
+                                        </h3>
+                                        <h3 class="destination__location">
+                                            <i class="destination__location-icon ti-location-pin"></i>
+                                            Europe
+                                        </h3>
+                                    </div>
+                                    <div class="destination__purpose-and-price">
+                                        <div class="destination__purpose">
+                                            <h3 class="destination__first-purpose">CULTURAL</h3>
+                                            <h3 class="destination__second-purpose">
+                                                RELAX
+                                                <span class="destination__purpose-hidden destination--yellow">
+                                                    +1
+                                                    <div class="destination__third-purpose">
+                                                        <a href="">Sport</a>
+                                                    </div>
+                                                </span>
+                                            </h3>
+                                        </div>
+                                        <div class="destination__price">
+                                            <span class="destination__current-price">
+                                                700$
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="destination__des">
+                                        <p class="destination__paragraph">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                        </p>
+                                    </div>
+                                    <div class="destination__button destination--yellow">
+                                        <a href="" class="btn">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="promotion__destination package__item-mg30px">
+                                <div class="destination__image-container">
+                                    <img src="./assests/img/destinations/hongkong_2.jpg" alt="" class="destination__image">
+                                    <div class="destination__sub-image-container destination__background--red">
+                                        <img src="./assests/img/Search_img/asia.png" alt="" class="destination__sub-img">
+                                    </div>
+                                </div>
+                                <div class="destination__info-wrapper">
+                                    <div class="destination__name">
+                                        <h3 class="destination__place">
+                                            Hong Kong
+                                        </h3>
+                                        <h3 class="destination__location">
+                                            <i class="destination__location-icon ti-location-pin"></i>
+                                            Asia
+                                        </h3>
+                                    </div>
+                                    <div class="destination__purpose-and-price">
+                                        <div class="destination__purpose">
+                                            <h3 class="destination__first-purpose">HISTORY</h3>
+                                            <h3 class="destination__second-purpose">
+                                                CULTURAL
+                                                <span class="destination__purpose-hidden destination--red">
+                                                    +1
+                                                    <div class="destination__third-purpose">
+                                                        <a href="">Sport</a>
+                                                    </div>
+                                                </span>
+                                            </h3>
+                                        </div>
+                                        <div class="destination__price">
+                                            <span class="destination__current-price">
+                                                700$
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="destination__des">
+                                        <p class="destination__paragraph">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                        </p>
+                                    </div>
+                                    <div class="destination__button destination--red">
+                                        <a href="" class="btn">DETAILS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="promotion__destination package__item-mg30px">
                                 <div class="destination__image-container">
                                     <img src="./assests/img/destinations/sanf_3.jpg" alt="" class="destination__image">
                                     <div class="destination__sub-image-container destination__background--purple">
@@ -1195,8 +1161,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer -->
+        <!-- FOOter -->
         <div class="footer">
             <div class="contact">
                 <div class="contact__heading">
