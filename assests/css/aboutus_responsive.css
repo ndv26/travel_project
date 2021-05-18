@@ -73,6 +73,20 @@
         display: block;
     }
 
+    /* about us text des*/
+
+    .about-us__first-para {
+        text-align: center;
+    }
+
+    .about-us__second-para {
+        text-align: center;
+    }
+
+    .about-us__video-img {
+        width: 100%;
+    }
+
     /* footer */
 
     .contact {
@@ -98,16 +112,19 @@
     }
 }
 
-/* Mobile only */
 @media (max-width: 739px) {
-    
+
     .header-navbar {
         height: unset;
         padding: 10px 10px;
     }
 
-    /* Content */
-    .content {
-        padding: 10px;
+    .staff__list-img {
+        width: 80%;
     }
+
+    .promotion__section {
+        padding: 0 15px;
+    }
+    
 }

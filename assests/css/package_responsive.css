@@ -112,6 +112,12 @@
     .footer {
         height: 100%;
     }
+}
 
-    
+@media (max-width: 739px) {
+
+    .header-navbar {
+        height: unset;
+        padding: 10px 10px;
+    }
 }
