@@ -75,6 +75,10 @@
 
     /* about us text des*/
 
+    .about-us__overview-spacing {
+        padding: 0;
+    }
+
     .about-us__first-para {
         text-align: center;
     }
