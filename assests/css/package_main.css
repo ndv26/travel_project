@@ -514,26 +514,11 @@
 }
 
 .search__menu-select-price {
-    position: relative;
     margin-bottom: 28px;
 }
 
-.search__menu-price-slider {
+.search__menu-price-selector {
     width: 100%;
-    height: 4px;
-    background-color: #e4e4e4;
-}
-
-.search__menu-price-pos {
-    display: block;
-    width: 16px;
-    height: 16px;
-    background-color: #14b9d5;
-    cursor: pointer;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: -6px;
 }
 
 .search__menu-promotion-check {
@@ -548,10 +533,13 @@
 .search__filter {
     text-align: center;
     margin-top: -10px;
+    display: flex;
+    justify-content: center;
 }
 
 .search__filter-wrapper {
     position: relative;
+    width: 175px;
 }
 
 .search__filer-pick {
@@ -568,6 +556,10 @@
 
 .search__filter-wrapper:hover .search__filter-row {
     display: flex;
+}
+
+.search__filter-board {
+    z-index: 1;
 }
 
 .search__filter-row {

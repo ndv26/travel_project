@@ -722,11 +722,10 @@
                                     <div class="search__menu-select">
                                         <div class="search__menu-select-price-heading">
                                             <h3 class="search__menu-select-heading">Max Price: </h3>
-                                            <span class="selected-price">0 $</span>
+                                            <span class="selected-price">2500$</span>
                                         </div>                      
                                         <div class="search__menu-select-price">
-                                            <div class="search__menu-price-slider"></div>
-                                            <span class="search__menu-price-pos"></span>
+                                            <input class="search__menu-price-selector" type="range" name="" min="0" max="100">
                                         </div>
                                         <div class="search__menu-check">
                                             <p class="search__menu-promotion-check">
@@ -1281,5 +1280,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // When changing the input price value
+        var inputPrice = document.querySelector('.search__menu-price-selector');
+        inputPrice.onchange = (e) => {
+            var selectedPricePercent = e.target.value;
+            var selectedPrice = Math.round(selectedPricePercent / 100 * 5000);
+            document.querySelector('.selected-price').innerHTML = selectedPrice + '$';
+        }
+    </script>
 </body>
 </html>
